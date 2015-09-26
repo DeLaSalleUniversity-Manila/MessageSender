@@ -13,6 +13,10 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private EditText et;
+    private String message;
+    private Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +34,21 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void onClickSend(View view){
-        EditText et = (EditText) findViewById(R.id.editText);
-        String message = et.getText().toString();
-        Intent intent = new Intent(this, ReceiveMessageActivity.class);
+    public void onClickSend1(View view){
+        et = (EditText) findViewById(R.id.editText);
+        message = et.getText().toString();
+        intent = new Intent(this, ReceiveMessageActivity.class);
         intent.putExtra("message", message);
+        startActivity(intent);
+    }
+
+
+    public void onClickSend2(View view){
+        et = (EditText) findViewById(R.id.editText);
+        message = et.getText().toString();
+        intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, message);
         startActivity(intent);
     }
 

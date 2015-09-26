@@ -3,5 +3,6 @@
     <string name="receive_message_activity_title">MessageReceiver</string>
     <string name="message_prompt">Please input your message:</string>
     <string name="action_settings">Settings</string>
-    <string name="send">SEND</string>
+    <string name="explicit_send">SEND (Explicit)</string>
+    <string name="implicit_send">SEND (Implicit)</string>
 </resources>

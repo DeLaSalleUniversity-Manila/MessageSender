@@ -26,13 +26,22 @@
         android:ems="10" />
 
     <Button
-        android:id="@+id/button_send"
+        android:id="@+id/button_send1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/editText"
-        android:text="@string/send"
-        android:onClick="onClickSend"/>
+        android:text="@string/explicit_send"
+        android:onClick="onClickSend1"/>
+
+    <Button
+        android:id="@+id/button_send2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_send1"
+        android:text="@string/explicit_send"
+        android:onClick="onClickSend2"/>
 
 
 </RelativeLayout>
