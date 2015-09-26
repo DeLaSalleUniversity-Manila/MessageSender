@@ -22,6 +22,11 @@
         <activity
             android:name=".ReceiveMessageActivity"
             android:label="@string/receive_message_activity_title">
+        <intent-filter>
+            <action android:name="android.intent.action.SEND"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:mimeType="text/plain"/>
+            </intent-filter>
         </activity>
 
     </application>

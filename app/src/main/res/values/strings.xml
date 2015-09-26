@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="explicit_send">SEND (Explicit)</string>
     <string name="implicit_send">SEND (Implicit)</string>
+    <string name="chooser_send">SEND (Chooser)</string>
+    <string name="chooser">Send message...</string>
 </resources>
